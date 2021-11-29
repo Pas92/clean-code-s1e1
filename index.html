@@ -8,10 +8,6 @@
           href="style.css"
           media="screen"
           charset="utf-8">
-    <link rel="stylesheet"
-          href="new-styles.css"
-          media="screen"
-          charset="utf-8">
   </head>
 
   <body>
@@ -24,10 +20,8 @@
     <main class="main">
       <section class="new-task">
         <h2 class="new-task__header">Add Item</h2>
-        <!-- <label for="new-task">Add Item</label> -->
         <div class="new-task__item">
-          <input class="input-text new-task__input-text"
-                 class="task"
+          <input class="new-task__input-text"
                  type="text">
           <button type="button" class="button new-task__button">Add</button>
         </div>
@@ -35,24 +29,24 @@
 
       <section class="tasks todo-tasks">
         <h2 class="tasks__header">Todo</h2>
-        <ul class="tasks__list todo-tasks__list" id="incompleteTasks">
+        <ul class="tasks__list todo-tasks__list">
           <li class="tasks__item todo-tasks__item">
             <input type="checkbox" class="tasks__checkbox">
-            <label class="task tasks__label todo-tasks__label">Pay Bills</label>
+            <label class="tasks__label todo-tasks__label">Pay Bills</label>
             <input type="text"
-                   class="task tasks__input">
+                   class="tasks__input">
             <button class="button tasks__button_edit edit">Edit</button>
             <button class="button tasks__button_delete delete">
               <img src="./remove.svg">
             </button>
           </li>
         
-          <li class="tasks__item todo-tasks__item editMode">
+          <li class="tasks__item tasks__item_edit-mode todo-tasks__item editMode">
             <input type="checkbox" class="tasks__checkbox">
-            <label class="task tasks__label todo-tasks__label">Go Shopping</label>
+            <label class="tasks__label todo-tasks__label">Go Shopping</label>
             <input type="text"
                    value="Go Shopping"
-                   class="task tasks__input">
+                   class="tasks__input">
             <button class="button tasks__button_edit edit">Save</button>
             <button class="button tasks__button_delete delete">
               <img src="./remove.svg">
@@ -63,11 +57,11 @@
         
       <section class="tasks completed-tasks">
         <h2 class="tasks__header">Completed</h2>
-        <ul class="tasks__list completed-tasks__list" id="completed-tasks">
+        <ul class="tasks__list completed-tasks__list">
           <li class="tasks__item completed-tasks__item">
             <input type="checkbox" class="tasks__checkbox" checked>
-            <label class="task tasks__label completed-tasks__label">See the Doctor</label>
-            <input type="text" class="task tasks__input">
+            <label class="tasks__label completed-tasks__label">See the Doctor</label>
+            <input type="text" class="tasks__input">
             <button class="button tasks__button_edit edit">Edit</button>
             <button class="button tasks__button_delete delete">
               <img src="./remove.svg">
